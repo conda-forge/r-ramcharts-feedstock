@@ -1,4 +1,4 @@
-{% set version = '2.1.13' %}
+{% set version = "2.1.15" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rAmCharts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rAmCharts/rAmCharts_{{ version }}.tar.gz
-  sha256: 2cdfff2eeb1fc5260e0bac863e18b58db6ada6318b558ab0720fc159e5f92fb1
+  sha256: ab0daf7d8528912b9cfcc2ef64b57ea05ab5c46e495c796d84667affebba9a39
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -48,21 +48,13 @@ test:
 about:
   home: http://datastorm-open.github.io/introduction_ramcharts/
   license: GPL-2.0-or-later
-  summary: Provides an R interface for using 'AmCharts' Library. Based on 'htmlwidgets', it provides
-    a global architecture to generate 'JavaScript' source code for charts. Most of classes
-    in the library have their equivalent in R with S4 classes; for those classes, not
-    all properties have been referenced but can easily be added in the constructors.
-    Complex properties (e.g. 'JavaScript' object) can be passed as named list. See examples
-    at <http://datastorm-open.github.io/introduction_ramcharts/> and <http://www.amcharts.com/>
-    for more information about the library. The package includes the free version of
-    'AmCharts' Library. Its only limitation is a small link to the web site displayed
-    on your charts. If you enjoy this library, do not hesitate to refer to this page
-    <http://www.amcharts.com/online-store/> to purchase a licence, and thus support
-    its creators and get a period of Priority Support. See also <http://www.amcharts.com/about/>
-    for more information about 'AmCharts' company.
+  summary: Provides an R interface for using 'AmCharts' Library. Based on 'htmlwidgets', it provides a global architecture to generate 'JavaScript' source code for charts. Most of classes in the library have their equivalent in R with S4 classes; for those classes, not all properties have been referenced but can easily be
+    added in the constructors. Complex properties (e.g. 'JavaScript' object) can be passed as named list. See examples at <http://datastorm-open.github.io/introduction_ramcharts/> and <http://www.amcharts.com/> for more information about the library. The package includes the free version of 'AmCharts' Library. Its only limitation
+    is a small link to the web site displayed on your charts. If you enjoy this library, do not hesitate to refer to this page <http://www.amcharts.com/online-store/> to purchase a licence, and thus support its creators and get a period of Priority Support. See also <http://www.amcharts.com/about/> for more information about
+    'AmCharts' company.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
