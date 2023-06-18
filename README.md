@@ -1,11 +1,11 @@
-About r-ramcharts
-=================
+About r-ramcharts-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ramcharts-feedstock/blob/main/LICENSE.txt)
 
 Home: http://datastorm-open.github.io/introduction_ramcharts/
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ramcharts-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides an R interface for using 'AmCharts' Library. Based on 'htmlwidgets', it provides a global architecture to generate 'JavaScript' source code for charts. Most of classes in the library have their equivalent in R with S4 classes; for those classes, not all properties have been referenced but can easily be added in the constructors. Complex properties (e.g. 'JavaScript' object) can be passed as named list. See examples at <http://datastorm-open.github.io/introduction_ramcharts/> and <http://www.amcharts.com/> for more information about the library. The package includes the free version of 'AmCharts' Library. Its only limitation is a small link to the web site displayed on your charts. If you enjoy this library, do not hesitate to refer to this page <http://www.amcharts.com/online-store/> to purchase a licence, and thus support its creators and get a period of Priority Support. See also <http://www.amcharts.com/about/> for more information about 'AmCharts' company.
 
