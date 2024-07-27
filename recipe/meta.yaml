@@ -1,7 +1,6 @@
 {% set version = "2.1.15" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 package:
   name: r-ramcharts
   version: {{ version|replace("-", "_") }}
@@ -12,8 +11,7 @@ source:
   sha256: ab0daf7d8528912b9cfcc2ef64b57ea05ab5c46e495c796d84667affebba9a39
 
 build:
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   noarch: generic
   rpaths:
     - lib/R/lib/
