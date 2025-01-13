@@ -1,4 +1,4 @@
-{% set version = "2.1.15" %}
+{% set version = "2.1.16" %}
 
 {% set posix = 'm2-' if win else '' %}
 package:
@@ -8,10 +8,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rAmCharts_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rAmCharts/rAmCharts_{{ version }}.tar.gz
-  sha256: ab0daf7d8528912b9cfcc2ef64b57ea05ab5c46e495c796d84667affebba9a39
+  sha256: bc4d77ae9d4ec2c4937ca43b74eaec7b6d612741cfb56dd665ee807d0488e2d6
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
